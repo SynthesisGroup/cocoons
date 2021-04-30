@@ -169,7 +169,7 @@ h6 {
 }
 
 .card {
-  border: none;
+  border: 1px solid #CBDDDD;
   border-radius: 1px;
 }
 
@@ -871,6 +871,31 @@ footer .footer-bottom .footer-bottom-text #year {
   top: 80%;
 }
 
+.accomodation-title {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.accomodation-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
+.accomodation-subtext {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8A8A8A;
+}
+
+.accomodation-amenities {
+  list-style-type: disc;
+  padding: 0 20px;
+}
+
 .promo-logo {
   position: absolute;
   top: 30px;
@@ -892,6 +917,13 @@ footer .footer-bottom .footer-bottom-text #year {
   position: absolute;
   bottom: 30px;
   right: 40px;
+}
+
+.photo-collection {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 .contact-section-title {
@@ -1054,6 +1086,17 @@ footer .footer-bottom .footer-bottom-text #year {
   .inner-page-section .container .inner-page-heading .inner-page-title {
     font-size: 50px;
   }
+  .card .card-body .accomodation-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .contact-section-title {
     margin-left: 0;
   }
@@ -1137,7 +1180,7 @@ footer .footer-bottom .footer-bottom-text #year {
     right: auto;
     margin-bottom: 16px;
   }
-  .card .card-body .promo-btn {
+  .card .card-body .accomodation-btn {
     position: relative;
     right: auto;
     bottom: auto;

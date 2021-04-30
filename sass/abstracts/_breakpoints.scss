@@ -100,6 +100,19 @@
         }
     }
 
+    // Cards
+    .card {
+        .card-body {
+            .accomodation-btn {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
     // Contact Us Page
     .contact-section-title {
         margin-left: 0;
@@ -231,7 +244,7 @@
                 margin-bottom: 16px;
             }
 
-            .promo-btn {
+            .accomodation-btn {
                 position: relative;
                 right: auto;
                 bottom: auto;

@@ -89,3 +89,28 @@
 .wg-box-fadeIn-bottom{
     top: 80%;
 }
+
+.accomodation-title {
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.accomodation-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.accomodation-subtext {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8A8A8A;
+}
+
+.accomodation-amenities {
+    list-style-type: disc;
+    padding: 0 20px;
+}
