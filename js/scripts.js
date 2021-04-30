@@ -46,6 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
             disableOnInteraction: false,
         },
     });
+    
+    // Featured Cocoons
+    let featuredCocoonsSwiper = new Swiper('.swiper-featured-cocoons', {
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+    });
 
     // Gallery Swiper
     let swiper = new Swiper('.swiper-container', {

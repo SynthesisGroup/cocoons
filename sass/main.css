@@ -590,7 +590,7 @@ footer .footer-bottom .footer-bottom-text #year {
 .cta-section {
   position: relative;
   padding: 100px 0 100px 0;
-  background-position: center bottom;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
 }
