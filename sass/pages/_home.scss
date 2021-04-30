@@ -4,7 +4,8 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
+    z-index: 9;
 
     &::before {
         position: absolute;
@@ -34,14 +35,14 @@
             padding: 20px;
 
             .banner-title {
-                font-size: 80px;
+                font-size: 90px;
                 text-transform: uppercase;
                 color: var(--color-white);
             }
 
             .banner-bottom-text {
                 font-size: 18px;
-                letter-spacing: 0.2em;
+                letter-spacing: 0.4em;
                 text-transform: uppercase;
                 color: var(--color-white);
             }

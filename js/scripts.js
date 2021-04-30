@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // AOS Initialized
     AOS.init();
 
+    // Banner Swiper
+    let bannerSwiper = new Swiper('.swiper-banner', {
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
     // Gallery Swiper
     let swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
