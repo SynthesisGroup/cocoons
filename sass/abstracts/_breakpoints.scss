@@ -9,9 +9,9 @@
             }
             .navbar-menu {
                 .navbar-items {
-                    margin-left: 30px;
+                    margin-left: 25px;
                     a {
-                        font-size: 13px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -25,10 +25,10 @@
         .navbar {
             .navbar-menu {
                 .navbar-items {
-                    margin-left: 20px;
+                    margin-left: 15px;
 
                     a {
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
             }
@@ -52,6 +52,7 @@
                 width: 300px;
                 z-index: 999;
                 display: none;
+                padding: 0 20px;
                 -webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                     animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
@@ -125,6 +126,7 @@
                 width: 300px;
                 z-index: 999;
                 display: none;
+                padding: 0 20px;
                 -webkit-animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                     animation: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
