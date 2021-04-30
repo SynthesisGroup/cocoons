@@ -298,7 +298,7 @@ section .section-headers .section-upper-text {
 }
 
 section .section-headers .section-title {
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
   color: var(--color-primary);
 }

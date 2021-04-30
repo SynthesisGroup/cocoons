@@ -18,7 +18,7 @@
         "layouts/_footer.scss",
         "pages/_home.scss",
         "pages/_locations.scss",
-        "pages/_rooms.scss",
+        "pages/_accomodations.scss",
         "pages/_promos.scss",
         "pages/_contact-us.scss",
         "plugins/_fancybox.scss",
