@@ -135,6 +135,14 @@
     .contact-section-info {
         margin-left: 0;
     }
+
+    .contact-menu {
+        margin-left: 0;
+
+        .contact-details {
+            grid-template-columns: 10% 90%;
+        }
+    }
 }
 
 // Mobile 
@@ -261,8 +269,8 @@
 
             .accomodation-btn {
                 position: relative;
-                right: auto;
-                bottom: auto;
+                display: grid;
+                justify-content: stretch;
             }
         }
     }
@@ -300,6 +308,14 @@
     
     .contact-section-info {
         margin-left: 0;
+    }
+
+    .contact-menu {
+        margin-left: 0;
+
+        .contact-details {
+            grid-template-columns: 10% 90%;
+        }
     }
 
     footer {

@@ -899,9 +899,14 @@ footer .footer-bottom .footer-bottom-text #year {
 }
 
 .accomodation-btn {
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  grid-gap: 10px;
 }
 
 .accomodation-subtext {
@@ -986,6 +991,25 @@ footer .footer-bottom .footer-bottom-text #year {
 
 .contact-section-info .contact-social-media li a {
   color: var(--color-primary);
+}
+
+.contact-menu {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.contact-menu .contact-details {
+  padding-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8% 92%;
+      grid-template-columns: 8% 92%;
+}
+
+.contact-menu .contact-details ion-icon {
+  font-size: 18px;
+  margin-right: 12px;
+  margin-top: 6px;
 }
 
 .fancybox-container .fancybox-inner .fancybox-infobar span {
@@ -1136,6 +1160,13 @@ footer .footer-bottom .footer-bottom-text #year {
   .contact-section-info {
     margin-left: 0;
   }
+  .contact-menu {
+    margin-left: 0;
+  }
+  .contact-menu .contact-details {
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1218,8 +1249,11 @@ footer .footer-bottom .footer-bottom-text #year {
   }
   .card .card-body .accomodation-btn {
     position: relative;
-    right: auto;
-    bottom: auto;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
   .location-content-wrapper .location-heading {
     margin-bottom: 20px;
@@ -1245,6 +1279,13 @@ footer .footer-bottom .footer-bottom-text #year {
   }
   .contact-section-info {
     margin-left: 0;
+  }
+  .contact-menu {
+    margin-left: 0;
+  }
+  .contact-menu .contact-details {
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
   }
   footer .footer-bottom {
     display: -ms-grid;

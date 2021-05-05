@@ -27,5 +27,21 @@
             }
         }
     }
+}
 
+.contact-menu {
+    margin-left: 40px;
+    padding: 0;
+
+    .contact-details {
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: 8% 92%;
+
+        ion-icon {
+            font-size: 18px;
+            margin-right: 12px;
+            margin-top: 6px;
+        }
+    }
 }

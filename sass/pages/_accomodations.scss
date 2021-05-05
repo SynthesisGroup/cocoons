@@ -100,9 +100,10 @@
 }
 
 .accomodation-btn {
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 10px;
 }
 
 .accomodation-subtext {
