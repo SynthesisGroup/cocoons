@@ -126,6 +126,14 @@ h6 {
   width: 100vw;
 }
 
+.ls-disc {
+  list-style: disc;
+}
+
+.wpcc-banner .wpcc-message {
+  color: var(--color-white);
+}
+
 .btn {
   font-family: var(--font-gotham);
   font-size: 13px;
