@@ -121,6 +121,11 @@
     .contact-section-info {
         margin-left: 0;
     }
+
+    // Sizing
+    .w-md-50 {
+        width: 50% !important;
+    }
 }
 
 // Mobile 
@@ -193,7 +198,7 @@
                 width: 100%;
 
                 .inner-page-title {
-                    font-size: 40px;
+                    font-size: 30px;
                 }
 
                 .inner-page-bottom-text {
@@ -298,5 +303,10 @@
                 margin-top: 16px;
             }
         }
+    }
+
+    // Sizing
+    .w-m-75 {
+        width: 75% !important;
     }
 }
