@@ -134,10 +134,6 @@ h6 {
   color: var(--color-white);
 }
 
-.w-45 {
-  width: 45%;
-}
-
 .btn {
   font-family: var(--font-gotham);
   font-size: 13px;
@@ -1135,9 +1131,6 @@ footer .footer-bottom .footer-bottom-text #year {
   .contact-section-info {
     margin-left: 0;
   }
-  .w-md-50 {
-    width: 50% !important;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1256,9 +1249,6 @@ footer .footer-bottom .footer-bottom-text #year {
   }
   footer .footer-bottom img {
     margin-top: 16px;
-  }
-  .w-m-75 {
-    width: 75% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
