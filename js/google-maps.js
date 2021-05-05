@@ -1,7 +1,7 @@
 // Club Laiya
 $(document).ready(function() {
     let locations = [
-        ['Brgy. Laiya Aplaya, San Juan, Batangas, Philippines', 13.673364, 121.394342],
+        ['Brgy. Laiya Aplaya, San Juan, Batangas, Philippines', 13.67299, 121.39433, 1],
     ];
 
     let map = new google.maps.Map(document.getElementById('club-laiya-location-embeded-google-map'), {
@@ -45,7 +45,7 @@ $(document).ready(function() {
 // Casobe
 $(document).ready(function() {
     let locations = [
-        ['Brgy. Sta Ana, Calatagan, Batangas', 13.791820, 120.644360, 1],
+        ['Brgy. Sta Ana, Calatagan, Batangas', 13.794366, 120.640522, 1],
     ];
 
     let map = new google.maps.Map(document.getElementById('casobe-location-embeded-google-map'), {

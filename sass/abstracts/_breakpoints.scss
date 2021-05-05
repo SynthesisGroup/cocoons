@@ -23,12 +23,17 @@
 @media only screen and (max-width: 992px) {
     header {
         .navbar {
+            .navbar-brand {
+                img {
+                    width: 130px;
+                }
+            }
             .navbar-menu {
                 .navbar-items {
-                    margin-left: 15px;
+                    margin-left: 10px;
 
                     a {
-                        font-size: 10px;
+                        font-size: 9px;
                     }
                 }
             }
