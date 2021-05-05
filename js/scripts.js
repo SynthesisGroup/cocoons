@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let bannerSwiper = new Swiper('.swiper-banner', {
         spaceBetween: 30,
         effect: 'fade',
+        grabCursor: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
@@ -84,6 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 5,
                 spaceBetween: 50,
             },
-        }
+        },
     });
 });
