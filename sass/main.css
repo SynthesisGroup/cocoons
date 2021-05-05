@@ -1077,6 +1077,9 @@ footer .footer-bottom .footer-bottom-text #year {
   header .navbar .navbar-menu .navbar-items a {
     font-size: 9px;
   }
+  .home-banner-section .container .banner-heading {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
