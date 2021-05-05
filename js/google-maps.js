@@ -1,7 +1,7 @@
 // Club Laiya
 $(document).ready(function() {
     let locations = [
-        ['Brgy. Laiya Aplaya, San Juan, Batangas, Philippines', 13.676340, 121.399540, 1],
+        ['Brgy. Laiya Aplaya, San Juan, Batangas, Philippines', 13.673364, 121.394342],
     ];
 
     let map = new google.maps.Map(document.getElementById('club-laiya-location-embeded-google-map'), {
