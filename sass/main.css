@@ -110,6 +110,10 @@ h6 {
   background-color: var(--color-light) !important;
 }
 
+.text-gold {
+  color: #936510 !important;
+}
+
 .disabled-bodyscroll {
   position: fixed;
 }
