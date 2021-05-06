@@ -114,6 +114,10 @@ h6 {
   color: #936510 !important;
 }
 
+.text-normal {
+  text-transform: none !important;
+}
+
 .disabled-bodyscroll {
   position: fixed;
 }
