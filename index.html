@@ -244,7 +244,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="hidden">
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-xl-6" data-aos="fade-up">
@@ -263,6 +263,90 @@
                 </div>
             </div>
         </section>
+		
+		<style>
+			body { overflow-x: hidden; }
+			.hidden { display: none !important; }
+			.header-fixed { z-index: 999; }
+			
+			/* Section: Map */
+			.section-map { position: relative; padding-top: 0; padding-bottom: 0; margin-top: 100px; }
+			.section-map { background-position: top; }
+			.section-map:before { position: absolute; content: ""; height: 30%; width: 100%; z-index: 1; }
+			.section-map:before { background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); }
+			.section-map:after { position: absolute; bottom: 0; height: 30%; width: 100%; content: ""; z-index: 1; }
+			.section-map:after { background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); }
+
+			.section-map .container { position: relative; z-index: 10; }
+			.section-map .card { border: 0; border-radius: 0; background-color: transparent; }
+			.section-map .card-body { padding: 40px; background-color: #222222; }
+			.section-map .card-body h2,
+			.section-map .card-body p { color: #FFFFFF; line-height: 1.8em; }
+			.section-map .card-body a { color: #CCCCCC; }
+			.section-map .card-body a:hover { opacityL 0.5; }
+
+			.section-map .icon-map-marker { position: absolute; display: block; width: 24px; height: 24px; z-index: 2; }
+			.section-map .icon-map-marker svg { fill: black; }		
+			.section-map .card-marker-details { transform: translate(0, -50%); }
+			.section-map .card-marker-details { position: absolute; max-width: 320px; left: 0; top: 50%; z-index: 2; }
+
+			.section-map .floating-cloud { position: absolute; z-index: 1; }
+			.section-map .floating-cloud img { filter: brightness(125%); }
+			.section-map .floating-cloud.cloud-1 { opacity: 0.9; left: 40%; top: 20%; }
+			.section-map .floating-cloud.cloud-1 img { height: 100px; }
+			.section-map .floating-cloud.cloud-2 { opacity: 0.9; left: 20%; top: 20%; }
+			.section-map .floating-cloud.cloud-2 img { height: 200px; }
+			.section-map .floating-cloud.cloud-3 { opacity: 0.9; left: 40%; top: 40%; }
+			.section-map .floating-cloud.cloud-3 img { height: 100px; }
+			.section-map .floating-cloud.cloud-4 { opacity: 0.9; left: 60%; top: 60%; }
+			.section-map .floating-cloud.cloud-4 img { height: 100px; }
+			.section-map .floating-cloud.cloud-5 { opacity: 0.9; left: 80%; top: 60%; }
+			.section-map .floating-cloud.cloud-5 img { height: 100px; }
+			.section-map .floating-cloud.cloud-6 { opacity: 0.9; left: 70%; top: 30%; }
+			.section-map .floating-cloud.cloud-6 img { height: 150px; }
+		</style>
+		
+		<!-- .section-map -->
+		<section class="section-map for-screen" style="background-image: url(img/map/img-ocean.jpg); ">
+			<div class="container">
+				<div class="row justify-content-center text-center">
+                    <div class="col-xl-6" data-aos="fade-up">
+                        <div class="section-headers">
+                            <div class="section-upper-text">Millennial Resorts</div>
+                            <h4 class="section-title">Project Locations</h4>
+                        </div>
+                    </div>
+                </div>
+				<div class="row justify-content-end align-items-center wow fadeInUp">
+					<div class="card card-marker-details">
+						<div class="card-body">
+							<img src="img/map/logo-casobe.png" alt="CaSoBe" class="img-fluid" />
+							<p>The latest Leisure Tourism Estate (LTE) development of Landco on the shores of Batangas.</p>
+							<a href="#" class="main-btn mt-4" tabindex="0">Explore</a>
+						</div>
+					</div>
+					<div class="floating-cloud cloud-1"><img src="img/map/img-cloud-1.png" alt="" /></div>
+					<div class="floating-cloud cloud-4"><img src="img/map/img-cloud-2.png" alt="" /></div>
+					<div class="floating-cloud cloud-6"><img src="img/map/img-cloud-2.png" alt="" /></div>
+
+					<div class="col-md-10">
+						<div class="position-relative">
+							<div class="icon-map-marker" style="left: 43%; top: 32%;">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+							</div>
+							<div class="icon-map-marker" style="left: 40.5%; top: 31%;">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+							</div>
+							<div class="icon-map-marker" style="left: 85%; top: 69%;">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+							</div>
+							<img src="img/map/philippine-map.png" class="img-fluid philippine-map" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.section-map -->
 
         <div class="swiper-featured-cocoons">
             <div class="swiper-wrapper">
