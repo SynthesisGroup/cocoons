@@ -301,6 +301,29 @@
         }
     }
 
+    // Section Map
+    .section-map {
+        .card-marker-details {
+            position: relative;
+            max-width: 100%;
+            transform: translate(0);
+        }
+
+        .floating-cloud .cloud-1 {
+            left: auto;
+        }
+
+        .floating-cloud  {
+            .cloud-4 {
+                left: auto;
+            }
+        }
+
+        .floating-cloud .cloud-6 {
+            left: auto;
+        }
+    }
+
     // Contact Us Page
     .contact-section-title {
         margin-left: 0;
