@@ -62,22 +62,26 @@ body { overflow-x: hidden; }
 
 /* 320  */
 @media (min-width: 320px) {	
-.for-mobile { display: block; }
-.for-screen { display: none; }
+	.for-mobile { display: block; }
+	.for-screen { display: none; }
 
-.section-map.for-mobile .icon-map-marker.map-project-1 { left: 47%; top: 0%; }
-.section-map.for-mobile .icon-map-marker.map-project-2 { right: 59%; top: 27%; left: auto; }
-.home-banner-section .container { width: 100%; }
+	.section-map.for-mobile .icon-map-marker.map-project-1 { left: 47%; top: 0%; }
+	.section-map.for-mobile .icon-map-marker.map-project-2 { right: 59%; top: 27%; left: auto; }
+	.home-banner-section .container { width: 100%; }
 
-.widget-reservation { bottom: -200px; width: 100%; }
-.section-introduction { margin-top: 100px; }
+	.widget-reservation { bottom: -200px; width: 100%; }
+	.section-introduction { margin-top: 100px; }
+	
+	.pb-100 { padding-bottom: 50px; }
 }
 
 /* 768 */
 @media (min-width: 768px) {	
-.for-mobile { display: none; }
-.for-screen { display: block; }
+	.for-mobile { display: none; }
+	.for-screen { display: block; }
 
-.widget-reservation { bottom: 20px; }
-.section-introduction { margin-top: 0; }
+	.widget-reservation { bottom: 20px; }
+	.section-introduction { margin-top: 0; }
+	
+	.pb-100 { padding-bottom: 100px; }
 }
