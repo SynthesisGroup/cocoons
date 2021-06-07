@@ -64,11 +64,20 @@ body { overflow-x: hidden; }
 #modal_FAQ .modal-content { /*width: 90%;*/ }
 
 header.header-fixed .header-ticker { display: none; }
-header .header-ticker { background-color: #34B4F5; margin-top: -15px; text-align: center; padding: 15px; }
+header .header-ticker { background-color: #34B4F5; margin-top: -15px; text-align: center; padding: 15px 0; }
 header .header-ticker p { color: #FFFFFF; margin-bottom: 0; }
 header .header-ticker a { background-color: rgba(0, 0, 0, 0.2); padding: 2px 5px; }
 header .header-ticker a { border-radius: 5px; transition: ease all 0.3s; color: #FFFFFF; }
 header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
+
+.main-fold { background-color: #000000; position: relative; }
+.main-fold:before { position: absolute; content: ""; background-color: #000000; }
+.main-fold:before { height: 100%; width: 100%; left: 0; top: 0; opacity: 0.5; }
+.main-fold .container,
+.main-fold .row { height: 100vh; position: relative; z-index: 1; color: #FFFFFF; }
+.main-fold h1 { font-size: 88px; text-transform: uppercase; }
+.main-fold h5 { font-size: 22px; letter-spacing: .4em; text-transform: uppercase; }
+.main-fold h4 { font-size: 18px; }
 
 /* Responsive */
 
@@ -85,6 +94,10 @@ header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
 	.section-introduction { margin-top: 100px; }
 	
 	.pb-100 { padding-bottom: 50px; }
+	
+	.main-fold h1 { font-size: 48px; }
+	.main-fold h5 { font-size: 20px; }
+	.main-fold h4 { font-size: 16px; }
 }
 
 /* 768 */
@@ -96,4 +109,8 @@ header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
 	.section-introduction { margin-top: 0; }
 	
 	.pb-100 { padding-bottom: 100px; }
+	
+	.main-fold h1 { font-size: 88px; }
+	.main-fold h5 { font-size: 22px; }
+	.main-fold h4 { font-size: 18px; }
 }
