@@ -88,3 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
+
+/* */
+$(document).ready(function(){
+	$("#modal_FAQ").modal('show');
+}, 5000);
