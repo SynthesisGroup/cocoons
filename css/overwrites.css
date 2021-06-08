@@ -74,10 +74,10 @@ header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
 .main-fold:before { position: absolute; content: ""; background-color: #000000; }
 .main-fold:before { height: 100%; width: 100%; left: 0; top: 0; opacity: 0.5; }
 .main-fold .container,
-.main-fold .row { height: 100vh; position: relative; z-index: 1; color: #FFFFFF; }
-.main-fold h1 { font-size: 88px; text-transform: uppercase; }
-.main-fold h5 { font-size: 22px; letter-spacing: .4em; text-transform: uppercase; }
-.main-fold h4 { font-size: 18px; }
+.main-fold .row { height: 100vh; position: relative; z-index: 1; }
+.main-fold h1 { font-size: 88px; color: #FFFFFF; text-transform: uppercase; }
+.main-fold h5 { font-size: 22px; color: #FFFFFF; text-transform: uppercase; letter-spacing: .4em; }
+.main-fold h4 { font-size: 18px; color: #FFFFFF; }
 
 /* Responsive */
 
