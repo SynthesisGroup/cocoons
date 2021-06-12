@@ -37,8 +37,8 @@ contactForm.addEventListener('submit', (e) => {
         // Get the data and transport to email
         Email.send({
             Host: "smtp.gmail.com",
-            Username : "markpaulcaneda19@gmail.com",
-            Password : "cnxyabwmstgwvsvg",
+            Username : "information.cloud365@gmail.com",
+            Password : "gqpptqkatjgljmxb",
             Port: 587,
             Tls: true,
             To : project.value,
