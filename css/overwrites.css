@@ -98,6 +98,24 @@ header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
 	.main-fold h1 { font-size: 48px; }
 	.main-fold h5 { font-size: 20px; }
 	.main-fold h4 { font-size: 16px; }
+	
+	.project-locations { width: 100%; height: 500px; background-position: top center; background-size: cover; position: relative; }
+	.project-locations a { position: absolute; width: 110px; height: 50px; transform: translate(-50%, -50%); display: block; }	
+	.project-locations a { border: 1px solid red; }
+	.project-locations .project-casobe { left: 22%; top: 110px; }
+	.project-locations .project-laiya { left: 51%; top: 165px; }
+}
+
+/* 480  */
+@media (min-width: 480px) {
+	.project-locations a { width: 110px; height: 50px; }	
+	.project-locations .project-casobe { left: 29%; top: 110px; }
+}
+
+/* 480  */
+@media (min-width: 560px) {
+	.project-locations a { width: 110px; height: 50px; }	
+	.project-locations .project-casobe { left: 31%; top: 110px; }
 }
 
 /* 768 */
@@ -113,4 +131,36 @@ header .header-ticker a:hover { background-color: rgba(0, 0, 0, 0); }
 	.main-fold h1 { font-size: 88px; }
 	.main-fold h5 { font-size: 22px; }
 	.main-fold h4 { font-size: 18px; }
+	
+	.project-locations { height: 700px; }
+	.project-locations a { width: 150px; height: 60px; }
+	.project-locations .project-casobe { left: 32%; top: 150px; }
+	.project-locations .project-laiya { left: 51%; top: 230px; }
+}
+
+/* 880 */
+@media (min-width: 880px) {	
+	.project-locations .project-casobe { left: 34%; top: 150px; }
+}
+
+/* 960 */
+@media (min-width: 960px) {	
+	.project-locations .project-casobe { left: 36%; top: 150px; }
+}
+
+/* 1080 */
+@media (min-width: 1080px) {	
+	.project-locations .project-casobe { left: 37%; top: 150px; }
+}
+
+/* 1260 */
+@media (min-width: 1260px) {	
+	.project-locations .project-casobe { left: 39%; top: 150px; }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+	.project-locations a { width: 160px; height: 70px; }
+	.project-locations .project-casobe { left: 40%; top: 160px; }
+	.project-locations .project-laiya { left: 51%; top: 250px; }
 }
