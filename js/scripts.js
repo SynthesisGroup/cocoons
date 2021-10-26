@@ -91,5 +91,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* */
 $(document).ready(function(){
-	$("#modal_FAQ").modal('show');
+	$("#modal_default").modal('show');
 }, 5000);

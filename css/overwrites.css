@@ -59,9 +59,10 @@ body { overflow-x: hidden; }
 
 .widget-reservation { position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0); z-index: 10000; }
 
-#modal_FAQ { z-index: 10000; background-color: rgba(0, 0, 0, 0); padding: 0; }
-#modal_FAQ .modal-dialog { max-width: 720px; }
-#modal_FAQ .modal-content { /*width: 90%;*/ }
+#modal_default { z-index: 10000; background-color: rgba(0, 0, 0, 0); padding: 0; }
+#modal_default .modal-dialog { /*max-width: 720px;*/ }
+#modal_default .modal-content { /*width: 90%;*/ }
+#modal_default .modal-body { padding: 30px; }
 
 header.header-fixed .header-ticker { display: none; }
 header .header-ticker { background-color: #34B4F5; margin-top: -15px; text-align: center; padding: 15px 0; }
