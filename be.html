@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<style>
+.button-checkbox { color: #7d90be !important; float: left !important; font-size: 16px; margin-top: 8px !important; position: relative; vertical-align: text-bottom; width: auto; border: none !important;}
+.book_btn { float: left; margin-top:20px;}
+.button-checkbox label { cursor:pointer; padding:0px 0px; color:#000000;}
+.button-checkbox input[type=checkbox] { display:none; }
+.button-checkbox input[type=checkbox] + label:before { font-family:FontAwesome; display:inline-block; }
+.button-checkbox input[type=checkbox] + label:before { content:"\f096"; font-size: 20px; height: 52px; padding: 0; position: relative; top: 14px; vertical-align: middle; width: 25px;}
+.button-checkbox input[type=checkbox] + label:before { letter-spacing:10px;}
+.button-checkbox input[type=checkbox]:checked + label:before { content:"\f046";}
+.button-checkbox input[type=checkbox]:checked + label:before { letter-spacing:5px; }
+.btn-book:hover { background:rgb(255, 255, 255) none repeat scroll 0 0; color:#fff; font-weight:600;}
+.btn-call { padding:10px; }
+.btn-book { background: #ffffff none repeat scroll 0 0; border: medium none; color: #013D3E; cursor: pointer; font-weight: 600; padding: 10px 15px; font-family: 'Cantarell', sans-serif;}
+.inner-addon .hasDatepicker { background:#fff url("calendar.png") no-repeat scroll 95% center !important; }
+.inner-addon .no_gst { background:#fff url("user.png") no-repeat scroll 95% center !important; }
+.widget_div { background: #eee none repeat scroll 0 0; display: inline-block; height: auto; margin: auto; padding: 10px; width: auto;}
+.widget_div .form-group span, .widget_div .form-group input[type="text"] { border: 1px solid #efefef; color: #3C2414; cursor: pointer; font-size: 13px; height: 20px; padding: 9px 12px; width: auto;}
+.widget_div .container { padding:10px; }
+.widget_div .form-group { float: left; margin: 0 10px 0 0; width:190px; }
+.widget_div .btn.btn-book { margin: 0; background-color: #013D3E ; color: #fff;}
+.form-group .inner-addon .fa.fa-calendar { position:absolute; right:29px; top:13px; z-index:0; color:#fff; }
+.radio, .checkbox { text-align:left; }
+.radio label, .checkbox label { color:#fff;}
+#location { border: 1px solid #efefef; color: #000; cursor: pointer; font-size: 13px; height: 40px; padding: 0px 12px; width: 192px;}
+#promo, #nguest { cursor: text;}
+#nguest {width:50px}
+lable { color: #3C2414; float: left; font-size: 15px; font-weight: 600; width: 100%;}
+.form-group.noguest {
+    width: 70px !important;
+}
+.form-group.buttoncheck {
+    width: 140px !important;
+}
+select#rooms{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+/*.form-group.rooms {
+    width: 90px !important;
+}*/
+.inner-addon .no_gst { background:#fff url("user.png") no-repeat scroll 95% center !important; }
+.ui-datepicker-calendar { margin-top:0px;}
+.ui-datepicker-calendar td { background-color:#fff;  padding:6px; cursor: pointer;}
+.ui-datepicker-calendar td a { text-decoration:none;}
+.ui-datepicker-calendar .ui-datepicker-other-month { opacity:1;}
+.ui-datepicker-unselectable { background-color:#f9f9f9 !important}
+.ui-datepicker { width:inherit !important;}
+.ui-datepicker-prev { float:left; text-decoration:none;}
+.ui-datepicker-next { float:right; text-decoration:none;}
+.ui-datepicker-calendar td a { text-decoration:none; font-weight:400;}
+.ui-datepicker-group-first { margin-right:35px;}
+.ui-datepicker-group { display:inline-block !important;}
+.ui-datepicker-unselectable .ui-state-default { color:#aaa !important;}
+.ui-datepicker-prev { margin-left:16px !important; margin-top:16px !important; text-decoration:none !important;}
+.ui-datepicker-next { margin-right:16px !important; margin-top:16px !important; text-decoration:none !important;}
+.ui-datepicker-prev { float:left !important;}
+.ui-datepicker-next { float:right !important;}
+.ui-datepicker-title { font-size:1.2em; font-weight:300; font-family:"Open Sans", sans-serif; text-align:center; padding:15px 20px !important; width:340px !important;
+background:#fff !important;}
+table { width:100%; margin-top:20px; margin-bottom:40px;}
+table td, table th { padding:10px 14px; text-align:center;}
+table td { border:1px dotted #ddd; font-weight:300;}
+table th { background-color:#013D3E; color:#fff; text-transform:uppercase;}
+.ui-datepicker { display: none;}
+.ui-datepicker { width: 285px;}
+.ui-datepicker-title { width: 285px !important;}
+.ui-icon.ui-icon-circle-triangle-w:before { content: "\f137"; font-family: FontAwesome;}
+.ui-icon.ui-icon-circle-triangle-e:before { content: "\f138"; font-family: FontAwesome;}
+.ui-datepicker-next, .ui-datepicker-prev {  height: 20px; overflow: hidden; width: 12px; cursor: pointer;}
+</style>
+<div class="widget_div">
+  <div class="">
+	    <div class="form-group adlch-cls">
+                                <div class="inner-addon right-addon">
+                                    <lable>Select Property </lable>
+                                    <select class="form-control" id="rooms" name="rooms" tabindex="-1" title="">
+                                        <option value="2155">All</option>
+                                        <option selected="" value="NA">Select Property</option>
+                                        <<option value="NDEx">Cocoons - Casobe</option>
+                                         <option value="NTQz">Cocoons - Club Laiya                                       
+                                       
+                                     
+                                    </select>
+                                </div></div>
+    <div class="form-group">
+      <div class="inner-addon right-addon">
+        <lable>Check In </lable>
+        <input type="text" class="form-control" placeholder="Check-in"  id="Check-in" readonly />
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="inner-addon right-addon">
+        <lable>Check Out </lable>
+        <input type="text" class="form-control" placeholder="Check-Out" id="Check-out"   readonly="readonly"/>
+      </div>
+    </div>
+	  	
+                            
+    <div class="form-group">
+      <div class="inner-addon right-addon">
+        <lable>Promo Code </lable>
+        <input type="text" class="form-control" placeholder="Promo Code" id="promo"/>
+      </div>
+    </div>
+    <div class="form-group buttoncheck"><span class="button-checkbox">
+      <input id="flexi" type="checkbox" />
+      <label for="flexi" style="display: inline-block;">Flexible Dates</label>
+      </span></div>
+    <div class="book_btn">
+      <button class="btn btn-book" type="submit" onClick="booknow1();"> Book Now</button>
+    </div>
+
+    <!-- <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12"> <a class="btn btn-danger btn-call"><i class="fa fa-phone"></i>'.$phone.'</a> </div>-->
+  </div>
+</div>
+<script type="text/javascript">
+ var tmp = '';
+           $(function() {
+                        var defaultdate = new Date();
+                         $.datepicker.setDefaults({
+						  "closeText":"Close",
+						  "currentText":"Today",
+						  "monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],
+						  "monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+						  "nextText":"Next",
+						  "prevText":"Previous",
+						  "dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+						  "dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+						  "dayNamesMin":["S","M","T","W","T","F","S"],
+				           "firstDay":1,
+						   "isRTL":false,
+						     "defaultDate": "defaultdate",
+							  minDate: 0,
+                            maxDate: '+3Y',
+						   });
+                    $("#Check-in").datepicker({
+                        changeMonth: true,
+                        numberOfMonths: 1,
+                        onClose: function(selectedDate) {
+                            cSelDate = $("#Check-in").datepicker('getDate');
+                            if (cSelDate) {
+                                cSelDate.setDate(cSelDate.getDate() + 1);
+                                $("#Check-out").datepicker("option", "minDate", cSelDate);
+                                $("#Check-out").focus();
+                            }
+                        },
+                        dateFormat: 'd M yy',
+                        buttonImage: '',
+                        buttonImageOnly: true
+                    });
+                    $("#Check-out").datepicker({
+                        changeMonth: true,
+                        numberOfMonths: 1,
+                        dateFormat: 'd M yy',
+                        buttonImage: '',
+                        buttonImageOnly: true
+                    });
+                    var todaysDate = new Date();
+                    $("#Check-in").datepicker("setDate", todaysDate);
+                    var tomorrow = new Date();
+                    tomorrow.setDate(todaysDate.getDate() + 3);
+                    $("#Check-out").datepicker("setDate", tomorrow);
+                });
+
+
+				function changeFormat(keydate){
+						var dateObject=new Date(keydate);
+						var formatedate= dateObject.getFullYear()+"-";
+						formatedate += dateObject.getMonth() <9 ?("0"+(dateObject.getMonth()+1)+"-" ):(dateObject.getMonth()+1)+"-";
+						formatedate += dateObject.getDate() <9 ?("0"+dateObject.getDate() ):dateObject.getDate();
+						return formatedate;
+					}
+
+
+
+
+
+						function booknow1(){
+
+							var checkindate  = $("#Check-in").val();
+							var checkoutdate = $("#Check-out").val();
+							var promocode = $("#promo").val() != "undefined"? $("#promo").val() :"";
+						    var rooms = $("#rooms").val();
+
+							
+						var chkin = changeFormat(checkindate);
+		                var chkout = changeFormat(checkoutdate);
+
+
+
+								var startDay = new Date(checkindate);
+							var endDay = new Date(checkoutdate);
+
+							var millisecondsPerDay = 1000 * 60 * 60 * 24;
+
+							var millisBetween = endDay.getTime() - startDay.getTime();
+							var days = millisBetween / millisecondsPerDay;
+							
+							
+							if(rooms=="NA")
+							{	
+								alert("Please select property");
+								return false;
+							}
+							else if(checkindate == ""){
+								alert("Select check-in date");
+								return false;
+							}else if(checkoutdate == ""){
+								alert("Select check-out date");
+								return false;
+							}else{
+
+
+							if(document.getElementById("flexi").checked)
+
+							{
+								window.open("https://staahmax.staah.net/be/index_be?propertyId=MjM5MQ==&individual=true&checkIn="+chkin+"&checkOut="+chkout+"&roomTypeId=" + rooms + "&promoCode="+promocode, "_blank");
+
+
+								}
+							else
+							{
+								window.open("https://staahmax.staah.net/be/indexpack?propertyId=MjM5MQ==&individual=true&checkIn="+checkindate+"&checkOut="+checkoutdate+"&roomTypeId=" + rooms + "&promoCode="+promocode, "_blank");
+
+							}
+
+
+							}
+
+
+
+						}
+						</script>
+</body>
+</html>
