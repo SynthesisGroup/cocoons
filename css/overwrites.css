@@ -59,10 +59,20 @@ body { overflow-x: hidden; }
 
 .widget-reservation { position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0); z-index: 10000; }
 
+/* Modal: Default */
 #modal_default { z-index: 10000; background-color: rgba(0, 0, 0, 0); padding: 0; }
 #modal_default .modal-dialog { /*max-width: 720px;*/ }
 #modal_default .modal-content { /*width: 90%;*/ }
 #modal_default .modal-body { padding: 30px; }
+#modal_default .modal-header,
+#modal_default .modal-footer { border: 0; text-align: center; }
+#modal_default .modal-header img { margin: 0 auto; max-width: 240px; }
+#modal_default .modal-footer img { margin: 0 auto; max-width: 160px; }
+#modal_default .modal-content { background-image: url(img/modal/bg-beach.jpg); background-size: cover; background-position: center center; }
+#modal_default .modal-body { padding: 30px; font-size: 14px; line-height: 22px; }
+#modal_default .modal-body ol { background-color: rgba(57, 182, 223, 0.5); padding: 25px 25px 25px 45px; border-radius: 5px; }
+#modal_default .modal-body ul { padding: 0 25px 0; list-style: disc; }
+#modal_default .modal-body li { margin-bottom: 20px; }
 
 header.header-fixed .header-ticker { display: none; }
 header .header-ticker { background-color: #34B4F5; margin-top: -15px; text-align: center; padding: 15px 0; }
